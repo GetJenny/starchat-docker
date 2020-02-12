@@ -2,7 +2,7 @@ version: "3.4"
 services:
 
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.4.2
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.5.1
     restart: unless-stopped
     command: elasticsearch
     ports:
@@ -19,7 +19,7 @@ services:
       - MAX_LOCKED_MEMORY=unlimited
 
   starchat:
-    image: getjenny/starchat:5.2.0-beta25
+    image: getjenny/starchat:5.2.0-beta30
     restart: unless-stopped
     command: ["/starchat/scripts/utils/wait-for-it.sh", "getjenny-es:9200", "-t", "15", "--", "/starchat/bin/starchat"]
     volumes:
