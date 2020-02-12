@@ -13,7 +13,7 @@ curl -k -v -H "Authorization: Basic $(echo -n 'test_user:p4ssw0rd' | base64)" \
             "failureValue" : "",
             "successValue" : "",
             "action" : "",
-            "actionInput" : {},
+            "actionInput" : [{}],
             "executionOrder" : 1,
             "stateData" : {}
       },
@@ -32,7 +32,7 @@ curl -k -v -H "Authorization: Basic $(echo -n 'test_user:p4ssw0rd' | base64)" \
             "stateData" : {},
             "action" : "",
             "successValue" : "",
-            "actionInput" : {}
+            "actionInput" : [{}]
       },
       {
             "failureValue" : "",
@@ -45,7 +45,7 @@ curl -k -v -H "Authorization: Basic $(echo -n 'test_user:p4ssw0rd' | base64)" \
             "stateData" : {},
             "successValue" : "",
             "action" : "",
-            "actionInput" : {}
+            "actionInput" : [{}]
       }
 ]'
 

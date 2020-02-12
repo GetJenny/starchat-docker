@@ -19,7 +19,7 @@ services:
       - MAX_LOCKED_MEMORY=unlimited
 
   starchat:
-    image: getjenny/starchat:5.2.0-beta30
+    image: getjenny/starchat:5.3.0-beta0
     restart: unless-stopped
     command: ["/starchat/scripts/utils/wait-for-it.sh", "getjenny-es:9200", "-t", "15", "--", "/starchat/bin/starchat"]
     volumes:
